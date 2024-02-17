@@ -2,12 +2,22 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch and Debug Standalone Blazor WebAssembly App",
+      "type": "blazorwasm",
+      "request": "launch",
+      "cwd": "${workspaceFolder}"
+    },
+    {
       "name": "run - app/vscode",
       "type": "extensionHost",
       "request": "launch",
       "runtimeExecutable": "${execPath}",
-      "args": ["--extensionDevelopmentPath=${workspaceFolder}/app/vscode/dev"],
-      "outFiles": ["${workspaceFolder}/app/vscode/dev/extension/dist/**/*.js"],
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/app/vscode/dev"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/app/vscode/dev/extension/dist/**/*.js"
+      ],
       "preLaunchTask": "build-extension"
     }
   ]
